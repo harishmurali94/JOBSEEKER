@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>428686615392-c3ap7t9aklku06qpb1bc2a6msvvhc2rj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.428686615392-c3ap7t9aklku06qpb1bc2a6msvvhc2rj</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>428686615392-sn6q5nnq89jrh9jn12b640nja4acmlo9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjGk19GH_MyJGk7qRtD5NTyj5zJGaSeDY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>428686615392</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.anytimejobs</string>
+	<key>PROJECT_ID</key>
+	<string>anytimejobs-5d562</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anytimejobs-5d562.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:428686615392:ios:4a58569f3d0600927a3405</string>
+	<key>DATABASE_URL</key>
+	<string>https://anytimejobs-5d562.firebaseio.com</string>
+</dict>
+</plist>

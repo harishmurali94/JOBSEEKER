@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "152613152089",
+    "firebase_url": "https://anytime-jobs.firebaseio.com",
+    "project_id": "anytime-jobs",
+    "storage_bucket": "anytime-jobs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152613152089:android:7b6c87b2c05d0534759848",
+        "android_client_info": {
+          "package_name": "com.anytimejobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152613152089-l9ndfov1rh8cr0on5l66vl9dua6gc0gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNJ7sWciQWyIqP639HwnJ_JhtcAjEfjsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152613152089-l9ndfov1rh8cr0on5l66vl9dua6gc0gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
