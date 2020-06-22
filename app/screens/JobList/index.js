@@ -7,20 +7,24 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import normalize from '../../lib/normalize';
+import normalize from 'app/lib/normalize';
 import { useFocusEffect } from '@react-navigation/native';
 import styles from './styles';
-import images from '../../config/images';
+import images from 'app/config/images';
 import * as findJobsActions from 'app/actions/findJobsActions';
 import Moment from 'moment';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
+import ModalLoader from 'app/components/ModalLoader';
 
 export default function JobList(props) {
   const navigation = useNavigation();
   const dispatch = useDispatch();
   const userid = useSelector(state => state.createProfileReducer.userID);
   const data = useSelector(state => state.jobListReducer.jobList);
+  const loader = useSelector(state => state.loadingReducer.isLoading);
+
+  const [jobListData, setJobListData] = useState([]);
 
   const [titles, setTitles] = useState([
     {
@@ -36,6 +40,9 @@ export default function JobList(props) {
       isSelected: false,
     },
   ]);
+  useEffect(() => {
+    setJobListData(data)
+  }, [data]);
 
   useFocusEffect(
     React.useCallback(() => {
@@ -53,12 +60,20 @@ export default function JobList(props) {
     }, [dispatch, userid]),
   );
 
-  setNewTitles = newTitle => {
-    setTitles(newTitle);
-  };
+  // setNewTitles = newTitle => {
+  //   setTitles(newTitle);
+  // };
 
   function onJobPress(item) {
     props.navigation.push('JobDetail', { itemId: item.jobId });
+  }
+
+  function onRefreshItems() {
+    let data = {
+      jobtype: 0,
+      userId: userid,
+    };
+    dispatch(findJobsActions.findJobRequest(data));
   }
   return (
     <SafeAreaView style={styles.safeAreaView}>
@@ -88,6 +103,8 @@ export default function JobList(props) {
 
       <FlatList
         data={data}
+        onRefresh={onRefreshItems}
+        refreshing={loader}
         renderItem={({ item }) => (
           <JobComponent
             item={item}

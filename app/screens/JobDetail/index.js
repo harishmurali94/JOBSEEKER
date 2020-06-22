@@ -27,7 +27,7 @@ export default function JobDetail(props) {
     return () => {
       dispatch(jobDetailAction.clearDetails());
     };
-  }, [dispatch, iTEmID]);
+  }, [iTEmID]);
 
   const applyJob = () => {
     let data = {

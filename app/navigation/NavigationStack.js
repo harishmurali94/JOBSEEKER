@@ -18,8 +18,9 @@ import { Image, Text, Alert } from 'react-native';
 import Notifications from '../screens/Notifications';
 import { TransitionPresets } from '@react-navigation/stack';
 import messaging from '@react-native-firebase/messaging';
+import { useNavigation } from '@react-navigation/native';
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
-var PushNotification = require('react-native-push-notification');
+let PushNotification = require('react-native-push-notification');
 
 const AppIntroStack = createStackNavigator();
 const LoginStack = createStackNavigator();
@@ -243,6 +244,7 @@ const RootStackScreen = ({ isAppIntro, otpVerified, profileVerified }) => {
 };
 
 export default function App() {
+  // const navigation = useNavigation();
   const isAppIntro = useSelector(state => state.appIntroReducer.isAppIntro);
   const otpVerified = useSelector(state => state.loginReducer.otpVerified);
   const profileVerified = useSelector(
@@ -305,12 +307,25 @@ export default function App() {
       requestPermissions: true,
     });
     messaging().onNotificationOpenedApp(async remoteMessage => {
-      console.log('REMOTEMESSAGEEEEEE', remoteMessage);
-      // navigation.navigate(remoteMessage.data.type);
+      if (remoteMessage) {
+        if (remoteMessage.data.Screenname === 'jobDetails') {
+          navigationRef.current.navigate('JobDetail', {
+            itemId: remoteMessage.data.JobId,
+          });
+        } else {
+          props.navigation.navigate('JobList');
+        }
+      }
     });
 
     messaging().onMessage(async message => {
-      console.log('MESSAGEEEEEEEEEE', message);
+      if (message.data.Screenname === 'jobDetails') {
+        navigationRef.current.navigate('JobDetail', {
+          itemId: message.data.JobId,
+        });
+      } else {
+        props.navigation.navigate('JobList');
+      }
     });
 
     // Check whether an initial notification is available
@@ -318,7 +333,13 @@ export default function App() {
       .getInitialNotification()
       .then(async remoteMessage => {
         if (remoteMessage) {
-          console.log('REMOTEEEEEEEEEEEEE', remoteMessage);
+          if (remoteMessage.data.Screenname === 'jobDetails') {
+            navigationRef.current.navigate('JobDetail', {
+              itemId: remoteMessage.data.JobId,
+            });
+          } else {
+            props.navigation.navigate('JobList');
+          }
         }
       });
   }, []);
