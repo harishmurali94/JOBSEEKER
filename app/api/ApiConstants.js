@@ -2,7 +2,7 @@
  */
 const ApiConstants = {
   BASE_URL: 'http://119.82.97.221/ATJ',
-  // BASE_URL:'https://www.uetracksg.com/AnytimeOT/API',
+  // BASE_URL: 'https://www.uetracksg.com/AnytimeOT/API',
   GET_OTP: '/api/Login/getOTPbyPhone',
   VERIFY_OTP: '/api/Login/verifyOTP',
   GET_JOB_TYPE: '/api/JobSeeker/getJobTypes',
