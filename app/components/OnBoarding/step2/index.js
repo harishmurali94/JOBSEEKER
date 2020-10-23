@@ -10,7 +10,6 @@ import {
 import CustomText from '../../CustomText';
 import CustomTextInput from '../../CustomTextInput';
 import Images from '../../../config/images';
-import { Button } from 'react-native-paper';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 import SelectArea from '../../OnBoarding/selectArea';
 import SelectMRT from '../../OnBoarding/selectMRT';

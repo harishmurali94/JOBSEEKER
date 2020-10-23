@@ -28,10 +28,12 @@ const styles = StyleSheet.create({
     backgroundColor:"rgb(240,243,244)",
     borderColor: "rgb(200,209,211)",color: 'rgb(38,38,38)',
     fontWeight: 'bold',
+    fontSize: 24
   },
 
   underlineStyleHighLighted: {
     borderColor: "rgb(200,209,211)",
+    fontSize:24
   },
 });
 

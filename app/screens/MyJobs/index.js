@@ -142,7 +142,7 @@ function JobComponent({ item, showConfirmation }) {
           <View>
             <View style={styles.dateView}>
               <Text style={styles.dateText}>
-                {Moment(item.jobStartson).format('DD MMM')}
+                {Moment(item.jobStartson).format('DD MMM')}{' - '}
               </Text>
               <Text style={styles.dateText}>
                 {Moment(item.jobEndson).format('DD MMM')}

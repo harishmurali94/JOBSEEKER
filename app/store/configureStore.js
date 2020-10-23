@@ -19,14 +19,14 @@ const sagaMiddleware = createSagaMiddleware();
 
 middleware.push(sagaMiddleware);
 
-if (__DEV__) {
-  const createDebugger = require('redux-flipper').default;
-  let reduxDebugger = createDebugger();
-   middleware.push(reduxDebugger);
-}
 // if (__DEV__) {
-//   middleware.push(createLogger());
+//   const createDebugger = require('redux-flipper').default;
+//   let reduxDebugger = createDebugger();
+//    middleware.push(reduxDebugger);
 // }
+if (__DEV__) {
+  middleware.push(createLogger());
+}
 
 const reducers = persistCombineReducers(config, rootReducers);
 const enhancers = [applyMiddleware(...middleware)];

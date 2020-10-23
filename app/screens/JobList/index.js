@@ -41,7 +41,7 @@ export default function JobList(props) {
     },
   ]);
   useEffect(() => {
-    setJobListData(data)
+    setJobListData(data);
   }, [data]);
 
   useFocusEffect(

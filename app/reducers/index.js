@@ -14,6 +14,12 @@ import * as getMyJobsReducer from './getMyJobsReducer'
 import * as appIntroReducer from './appIntroReducer';
 import * as getTokenReducer from './getTokenReducer';
 import * as hiredJobDetailReducer from './hiredJobDetailReducer';
+import * as getDistinctJobTypeReducer from './getDistinctJobTypeReducer';
+import * as getBannerReducer from './getBannerReducer';
+import * as getInformationReducer from './getInformationReducer';
+import * as getNotificationReducer from './getNotificationReducer';
+import * as getEarningsReducer from './getEarningsReducer';
+import * as getEarningDetailsReducer from './getEarningDetailsReducer';
 
 export default Object.assign(
   loginReducer,
@@ -28,5 +34,11 @@ export default Object.assign(
   getMyJobsReducer,
   appIntroReducer,
   getTokenReducer,
-  hiredJobDetailReducer
+  hiredJobDetailReducer,
+  getDistinctJobTypeReducer,
+  getBannerReducer,
+  getInformationReducer,
+  getNotificationReducer,
+  getEarningsReducer,
+  getEarningDetailsReducer,
 );

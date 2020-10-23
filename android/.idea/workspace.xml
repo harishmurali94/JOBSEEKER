@@ -28,31 +28,44 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/actions/applyJobsActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/actions/applyJobsActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/actions/createProfileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/actions/createProfileActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/actions/loginActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/actions/loginActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/actions/navigationActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/actions/navigationActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/api/ApiConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/api/ApiConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/api/methods/applyJob.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/api/methods/applyJob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/components/OnBoarding/step2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/components/OnBoarding/step2/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/components/select/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/components/select/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/components/signupStep2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/components/signupStep2/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/navigation/NavigationStack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/navigation/NavigationStack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/reducers/createProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/reducers/createProfileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/reducers/getJobTypeReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/reducers/getJobTypeReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/reducers/loginReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/reducers/loginReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/sagas/getJobDetailsSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/sagas/getJobDetailsSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/sagas/getLocations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/sagas/getLocations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/sagas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/sagas/loginSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/sagas/loginSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/sagas/otpSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/sagas/otpSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/Boarding/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/Boarding/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/FinalScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/FinalScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/FinalScreen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/FinalScreen/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/screens/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/JobDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/JobDetail/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/JobList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/JobList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/JobList/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/JobList/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/screens/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/Login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/MyJobs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/MyJobs/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/MyJobs/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/MyJobs/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/screens/Notifications/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/Notifications/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/screens/OTP/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/OTP/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/screens/OTP/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/screens/OTP/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/store/configureStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -225,66 +238,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
                 <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="android" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="cleanup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="install" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AnytimeJobs" type="f1a62948:ProjectNode" />
-                <item name="notifee_react-native" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
@@ -1199,12 +1152,12 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -1219,11 +1172,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -1240,8 +1202,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -1251,11 +1213,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ReactNativePushNotificationPackage</find>
+      <find>all projects</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/app/keystore/keystore.jks" />
-    <option name="KEY_ALIAS" value="key123456" />
+    <option name="KEY_ALIAS" value="key0" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
@@ -1285,8 +1248,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1298,36 +1261,6 @@
               <item name="AnytimeJobs" type="b2602c69:ProjectViewProjectNode" />
               <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnytimeJobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnytimeJobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnytimeJobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnytimeJobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1442,11 +1375,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="722" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32956383" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32956383" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -1459,7 +1392,7 @@
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.3265306" />
       <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="8" />
@@ -1473,12 +1406,12 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/anytimejobs/MainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1487,6 +1420,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1499,15 +1439,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="15">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>

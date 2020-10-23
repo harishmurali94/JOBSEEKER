@@ -8,7 +8,6 @@ const initialState = {
 
 export const getJobTypeReducer = createReducer(initialState, {
   [types.GET_JOB_TYPES](state, action) {
-    console.log("reducer actions get job type",action);
     return { ...state, jobTypes: action.response, limit: action.limit };
   },
 });

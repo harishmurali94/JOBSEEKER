@@ -12,6 +12,12 @@ import * as applyJobActions from './applyJobsActions';
 import * as getMyJobsAction from './getMyJobsAction';
 import * as appIntroActions from './appIntroAction';
 import * as getTokenAction from './getTokenAction';
+import * as getInformationActions from './getInformationActions';
+import * as getBannerActions from './getBannerActions';
+import * as getDistinctJobTypesActions from './getDistinctJobTypesActions';
+import * as getNotificationActions from './getNotificationActions';
+import * as getEarningsActions from './getEarningsActions';
+import * as getEarningDetailsActions from './getEarningDetailsActions';
 
 export const ActionCreators = Object.assign(
   {},
@@ -27,5 +33,11 @@ export const ActionCreators = Object.assign(
   createProfileActions,
   getMyJobsAction,
   appIntroActions,
-  getTokenAction
+  getTokenAction,
+  getInformationActions,
+  getBannerActions,
+  getDistinctJobTypesActions,
+  getNotificationActions,
+  getEarningsActions,
+  getEarningDetailsActions,
 );

@@ -10,8 +10,10 @@ import OTP from 'app/screens/OTP';
 import Boarding from 'app/screens/Boarding';
 import JobList from 'app/screens/JobList';
 import MyJobs from 'app/screens/MyJobs';
+import Home from 'app/screens/Home';
 import JobDetail from 'app/screens/JobDetail';
 import FinalScreen from 'app/screens/FinalScreen';
+import ProfileScreen from 'app/screens/ProfileScreen';
 import SplashScreen from 'react-native-splash-screen';
 import images from '../config/images';
 import { Image, Text, Alert } from 'react-native';
@@ -95,6 +97,19 @@ const JobStackScreen = () => (
   </JobStack.Navigator>
 );
 
+const HomeStackScreen = () => (
+  <JobStack.Navigator>
+    <JobStack.Screen
+      name="Home"
+      component={Home}
+      options={{
+        headerShown: false,
+        ...TransitionPresets.SlideFromRightIOS,
+      }}
+    />
+  </JobStack.Navigator>
+);
+
 const MyJobStackScreen = () => (
   <MyJobStack.Navigator>
     <MyJobStack.Screen
@@ -135,6 +150,9 @@ const JobTabNavigatorScreen = () => (
           marginBottom: 5,
         };
         switch (route.name) {
+          case 'Home':
+            text = 'Home';
+            break;
           case 'All Jobs':
             text = 'Explore Jobs';
             break;
@@ -142,7 +160,7 @@ const JobTabNavigatorScreen = () => (
             text = 'My Jobs';
             break;
           default:
-            text = 'Notifications';
+            text = 'Profile';
             break;
         }
 
@@ -151,6 +169,9 @@ const JobTabNavigatorScreen = () => (
       tabBarIcon: ({ focused, color, size }) => {
         var iconName;
         switch (route.name) {
+          case 'Home':
+            iconName = images.allJobs.allJobs;
+            break;
           case 'All Jobs':
             iconName = images.allJobs.allJobs;
             break;
@@ -179,6 +200,13 @@ const JobTabNavigatorScreen = () => (
       showLabel: true,
     }}>
     <JobTabNavigator.Screen
+      name="Home"
+      component={HomeStackScreen}
+      options={({ route }) => ({
+        tabBarVisible: getTabBarVisible(route),
+      })}
+    />
+    <JobTabNavigator.Screen
       name="All Jobs"
       component={JobStackScreen}
       options={({ route }) => ({
@@ -193,8 +221,8 @@ const JobTabNavigatorScreen = () => (
       })}
     />
     <JobTabNavigator.Screen
-      name="Notifications"
-      component={Notifications}
+      name="Pofile"
+      component={ProfileScreen}
       options={({ route }) => ({
         tabBarVisible: getTabBarVisible(route),
       })}

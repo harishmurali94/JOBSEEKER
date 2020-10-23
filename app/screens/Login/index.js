@@ -21,16 +21,29 @@ import SplashScreen from 'react-native-splash-screen';
 import normalize from '../../lib/normalize';
 import messaging from '@react-native-firebase/messaging';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import Geolocation from '@react-native-community/geolocation';
 
 let fcmToken;
 
 export default function Login(props) {
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     SplashScreen.hide();
-  //   }, 1000);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  const [error, setError] = useState('');
+  const [position, setPosition] = useState({
+    latitude: 0,
+    longitude: 0,
+  });
+
+  useEffect(() => {
+    Geolocation.getCurrentPosition(
+      pos => {
+        setError('');
+        setPosition({
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+        });
+      },
+      e => setError(e.message),
+    );
+  }, []);
 
   const loader = useSelector(state => state.loadingReducer.isLoading);
   const lan = useSelector(state => state.languageReducer.language);

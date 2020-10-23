@@ -2,29 +2,28 @@ import { put, call, select } from 'redux-saga/effects';
 import getAreas from 'app/api/methods/getAreas';
 import * as getLocationActions from 'app/actions/getLocationActions';
 import * as loaderAction from 'app/actions/loaderActions';
-import * as loginActions from '../actions/loginActions';
+import * as navigateActions from 'app/actions/navigationActions';
 // Our worker Saga that logins the user
 export default function* getLocations(action) {
-   yield put(loaderAction.enableLoader());
+  yield put(loaderAction.enableLoader());
   try {
     const response = yield call(getAreas, action.data);
     // console.log("response",JSON.stringify(response,null,2));
     if (response.Status === 'Success') {
-      const zoneArea = response.Data.map((zone,zoneIndex) => {
+      const zoneArea = response.Data.map((zone, zoneIndex) => {
         return zone.areaByzone;
       });
       const mrtArea = response.Data.map(mrt => {
         return mrt.areaBymrt;
       });
 
-
-      const mrtCustom = mrtArea[0].map((mrts,mrtIn) => {
-        if(mrtIn == 0){
+      const mrtCustom = mrtArea[0].map((mrts, mrtIn) => {
+        if (mrtIn == 0) {
           mrts.isSelected = true;
-        }else{
+        } else {
           mrts.isSelected = false;
         }
-       
+
         mrts.arealistmrt.map(it => {
           it.isSelected = false;
           return it;
@@ -32,11 +31,11 @@ export default function* getLocations(action) {
         return mrts;
       });
 
-      const areaCustom = zoneArea[0].map((zones,zonIndex) =>{
+      const areaCustom = zoneArea[0].map((zones, zonIndex) => {
         // zones.isSelected = false;
-        if(zonIndex == 0){
+        if (zonIndex == 0) {
           zones.isSelected = true;
-        }else{
+        } else {
           zones.isSelected = false;
         }
         zones.arealist.map(it => {
@@ -46,7 +45,13 @@ export default function* getLocations(action) {
         return zones;
       });
 
-      yield put(getLocationActions.saveLocations(areaCustom,mrtCustom,response.Maxlimit));
+      yield put(
+        getLocationActions.saveLocations(
+          areaCustom,
+          mrtCustom,
+          response.Maxlimit,
+        ),
+      );
       // yield put(loginActions.otpVerified())
       yield put(loaderAction.disableLoader({}));
       // yield put(loaderAction.disableLoader({}));

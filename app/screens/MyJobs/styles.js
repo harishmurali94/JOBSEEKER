@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#69e4a6',
   },
   dateView: {
-    justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
     width: metrics.screenWidth - 60,

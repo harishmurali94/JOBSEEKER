@@ -10,20 +10,17 @@ export default function* loginAsync(action) {
 
   try {
     const response = yield call(loginUser, action.data);
-    console.log("response +++ ",response);
     yield put(loaderAction.disableLoader({}));
     if (response.Status === 'Success') {
       yield put(loginActions.onLoginResponse(action.data));
-      if(!action.fromOTP){
+      if (!action.fromOTP) {
         yield call(navigateActions.navigateToHome());
       }
     } else if (response.Status === 'Failure') {
-     
-       yield put(loaderAction.disableLoader({}));
+      yield put(loaderAction.disableLoader({}));
     }
   } catch (error) {
     yield put(loaderAction.disableLoader({}));
     console.log('error in number verification', error);
-    
   }
 }

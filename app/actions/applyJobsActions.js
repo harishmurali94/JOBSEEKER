@@ -1,26 +1,22 @@
 import * as types from './types';
 
-
-
 export function applyJobRequest(params) {
   return {
     type: types.APPLY_JOB_REQUEST,
-    params
+    params,
   };
-};
+}
 
 export function applyJobResponse(status) {
   return {
     type: types.APPLY_JOB_RESPONSE,
-    status
+    status,
   };
 }
-
-
 
 export function applyJobsFailed(status) {
   return {
     type: types.APPLY_JOB_FAILED,
-    status
+    status,
   };
 }
